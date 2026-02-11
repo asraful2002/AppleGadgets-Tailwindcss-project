@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .btn-primary {
-  @apply mx-10 my-10 inline-block bg-red-600 text-white font-semibold text-lg py-3 px-5 rounded-full hover:bg-red-900 hover:transition-colors focus:ring-2 ring-offset-2 ring-green-500;
+  @apply mx-10 my-10 inline-block bg-red-600 text-lg py-3 px-5 rounded-full hover:bg-red-900 hover:transition-colors focus:ring-2 ring-offset-2 ring-green-500 sm: text-purple-200 font-semibold;
 }
