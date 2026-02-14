@@ -1,10 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {},
+    },
     extend: {
-      screens: {
-        "show-menu": "1022px",
-      },
+      screens: {},
     },
   },
+  plugins: [],
 };

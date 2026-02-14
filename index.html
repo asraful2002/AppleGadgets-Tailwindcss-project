@@ -9,9 +9,11 @@
   </head>
   <body>
     <header class="print:hidden sticky top-0 w-full z-20">
-      <div class="bg-black text-white">
-        <div class="container flex justify-between items-center py-4">
-          <div class="flex items-center gap-3">
+      <div class="bg-black text-white w-full">
+        <div
+          class="w-auto flex items-center justify-between sm:justify-between p-4 xl:px-[20%]"
+        >
+          <div class="flex items-center gap-2">
             <!-- menu button  -->
             <button type="button" aria-label="Open" class="xl:hidden w-6 h-6">
               <svg
@@ -44,7 +46,7 @@
           <!-- such button start  -->
           <button
             type="button"
-            class="hidden xl:flex items-center justify-center h-12 py-3 px-4 overflow-hidden relative flex-1 lg:max-w-[400px] 2xl:max-w-[584px] rounded-full bg-gray-800 border border-gray-700"
+            class="hidden xl:flex items-center justify-center h-12 py-3 px-3 overflow-hidden relative flex-1 lg:max-w-[400px] 2xl:max-w-[684px] rounded-full bg-gray-800 border border-gray-700"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +167,7 @@
                 ></a
               >
               <!-- shopping cut icon end  -->
-
+              <!-- mobile responsive such section  -->
               <button
                 class="relative text-white hover:text-orange-500 border border-gray-400 size-10 2xl:size-12 rounded-full hidden xl:grid place-items-center"
               >
@@ -195,11 +197,11 @@
           </div>
         </div>
         <div class="xl:hidden relative p-2">
-          <form class="container flex gap-3 items-center">
+          <form class="w-[100%] flex gap-3 items-end">
             <div class="relative flex-1">
-              <label for="query" class="sr-only">Search</label
-              ><input
-                class="w-[100%] border px-3 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-start h-10 text-gray-900 bg-white border-gray-700 rounded-full pr-8 pl-4 py-2 text-sm"
+              <label for="query" class="sr-only">Search</label>
+              <input
+                class="w-full border px-3 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-start h-10 text-gray-900 bg-white border-gray-700 rounded-full pr-8 pl-4 py-2 text-sm"
                 id="query"
                 placeholder="Search product, brand, and more..."
                 name="query"
@@ -210,1065 +212,210 @@
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
                   fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-search text-white size-4"
+                  class="size-6"
                 >
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <path d="m21 21-4.3-4.3"></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
                 </svg>
               </button>
             </div>
           </form>
         </div>
       </div>
-      <div
-        class="fixed xl:hidden bg-white backdrop-blur shadow-[0px_0px_10px_rgb(0_0_0_/_10%)] bottom-0 left-0 right-0"
-      >
-        <div class="shadow-md pt-3 pb-1.5 grid grid-cols-4 items-center gap-4">
-          <a
-            class="text-xs font-normal flex flex-col gap-1.5 items-center text-orange-500"
-            href="/"
-            ><svg
-              width="20"
-              height="20"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.99932 21L7.74868 17.4911C7.61394 15.6046 9.10803 14 10.9993 14C12.8906 14 14.3847 15.6046 14.25 17.4911L13.9993 21"
-                stroke="currentColor"
-                stroke-width="1.5"
-              ></path>
-              <path
-                d="M1.35139 12.2135C0.998371 9.91624 0.821861 8.76763 1.25617 7.74938C1.69047 6.73112 2.65403 6.03443 4.58114 4.64106L6.02099 3.6C8.41829 1.86667 9.61694 1 11 1C12.3831 1 13.5817 1.86667 15.979 3.6L17.4189 4.64106C19.346 6.03443 20.3095 6.73112 20.7438 7.74938C21.1781 8.76763 21.0016 9.91624 20.6486 12.2135L20.3476 14.1724C19.8471 17.4289 19.5969 19.0572 18.429 20.0286C17.2611 21 15.5537 21 12.1388 21H9.86119C6.44633 21 4.73891 21 3.571 20.0286C2.40309 19.0572 2.15287 17.4289 1.65243 14.1724L1.35139 12.2135Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linejoin="round"
-              ></path></svg
-            ><span class="">Home</span></a
-          ><button
-            class="text-xs font-normal text-gray-600 flex flex-col gap-1.5 items-center"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 18 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11 2C11 1.44772 11.4477 1 12 1H16C16.5523 1 17 1.44772 17 2V6C17 6.55228 16.5523 7 16 7H12C11.4477 7 11 6.55228 11 6V2Z"
-                stroke="#737373"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1 12C1 11.4477 1.44772 11 2 11H6C6.55228 11 7 11.4477 7 12V16C7 16.5523 6.55228 17 6 17H2C1.44772 17 1 16.5523 1 16V12Z"
-                stroke="#737373"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M11 14C11 14.7956 11.3161 15.5587 11.8787 16.1213C12.4413 16.6839 13.2044 17 14 17C14.7956 17 15.5587 16.6839 16.1213 16.1213C16.6839 15.5587 17 14.7956 17 14C17 13.2044 16.6839 12.4413 16.1213 11.8787C15.5587 11.3161 14.7956 11 14 11C13.2044 11 12.4413 11.3161 11.8787 11.8787C11.3161 12.4413 11 13.2044 11 14Z"
-                stroke="#737373"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <path
-                d="M1 4C1 4.39397 1.0776 4.78407 1.22836 5.14805C1.37913 5.51203 1.6001 5.84274 1.87868 6.12132C2.15726 6.3999 2.48797 6.62087 2.85195 6.77164C3.21593 6.9224 3.60603 7 4 7C4.39397 7 4.78407 6.9224 5.14805 6.77164C5.51203 6.62087 5.84274 6.3999 6.12132 6.12132C6.3999 5.84274 6.62087 5.51203 6.77164 5.14805C6.9224 4.78407 7 4.39397 7 4C7 3.60603 6.9224 3.21593 6.77164 2.85195C6.62087 2.48797 6.3999 2.15726 6.12132 1.87868C5.84274 1.6001 5.51203 1.37913 5.14805 1.22836C4.78407 1.0776 4.39397 1 4 1C3.60603 1 3.21593 1.0776 2.85195 1.22836C2.48797 1.37913 2.15726 1.6001 1.87868 1.87868C1.6001 2.15726 1.37913 2.48797 1.22836 2.85195C1.0776 3.21593 1 3.60603 1 4Z"
-                stroke="#737373"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path></svg
-            ><span class="">Category</span></button
-          ><a
-            class="text-xs font-normal text-gray-600 flex flex-col gap-1.5 items-center"
-            href="/offer"
-            ><svg
-              width="20"
-              height="20"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 15L15 7M9 8C9 8.55228 8.55228 9 8 9C7.44772 9 7 8.55228 7 8C7 7.44772 7.44772 7 8 7C8.55228 7 9 7.44772 9 8ZM15 13.8284C15 14.3807 14.5523 14.8284 14 14.8284C13.4477 14.8284 13 14.3807 13 13.8284C13 13.2761 13.4477 12.8284 14 12.8284C14.5523 12.8284 15 13.2761 15 13.8284Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <circle
-                cx="11"
-                cy="11"
-                r="10"
-                stroke="currentColor"
-                stroke-width="1.5"
-              ></circle></svg
-            ><span class="">Offer</span></a
-          ><button
-            type="button"
-            class="text-xs font-normal text-gray-600 flex flex-col gap-1.5 items-center xl:hidden"
-          >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="11"
-                cy="11"
-                r="10"
-                stroke="currentColor"
-                stroke-width="1.5"
-              ></circle>
-              <path
-                d="M6.5 16C8.8317 13.5578 13.1432 13.4428 15.5 16M13.4951 8.5C13.4951 9.88071 12.3742 11 10.9915 11C9.60885 11 8.48797 9.88071 8.48797 8.5C8.48797 7.11929 9.60885 6 10.9915 6C12.3742 6 13.4951 7.11929 13.4951 8.5Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path></svg
-            ><span>Sign In</span>
-          </button>
-        </div>
-      </div>
+      <!-- such sectiotion end  -->
+
+      <!-- navigation manu start  -->
       <nav class="relative shadow-sm hidden xl:block">
         <div class="relative z-10 bg-white">
           <div
-            class="container flex items-center justify-center gap-1 3xl:gap-2.5"
+            class="w-auto flex items-center justify-center gap-1 3xl:gap-2.5"
           >
             <span class="relative flex gap-2 items-center group"
               ><a
                 class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
-                href="/brands/apple"
+                href=""
                 >Apple Products</a
-              ><svg
-                stroke-width="1.5"
-                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
-                width="20"
-                height="20"
-                stroke="currentColor"
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <polyline points="6 9 12 15 18 9"></polyline>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
               </svg>
-              <div
-                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
-              >
-                <span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/iphone"
-                    >iPhone</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/macbook"
-                    >MacBook<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mac-mini"
-                    >Mac mini</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/imac"
-                    >iMac<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mac-studio"
-                    >Mac Studio</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/ipad"
-                    >iPad</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/smart-watch/apple"
-                    >Apple Watch</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/sound-equipment/airpods?brands=68&amp;page=1"
-                    >Airpods</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/earpods"
-                    >EarPods</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/airpods-max"
-                    >AirPods Max</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/power-accessories/power-adapter?brands=68&amp;page=1"
-                    >Power Adapter</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/power-accessories/cable-and-interconnects?brands=68&amp;page=1"
-                    >Data Cable</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/air-tag"
-                    >AirTag</a
-                  ></span
-                >
-              </div></span
-            ><span class="relative flex gap-2 items-center group"
+            </span>
+            <!-- 1st nev section end  -->
+            <!-- 2st nev section start  -->
+
+            <span class="relative flex gap-2 items-center group"
               ><a
                 class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
-                href="/category/mobile-phone"
+                href=""
                 >Phones</a
               ><svg
-                stroke-width="1.5"
-                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
-                width="20"
-                height="20"
-                stroke="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <polyline points="6 9 12 15 18 9"></polyline>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
               </svg>
-              <div
-                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
-              >
-                <span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/iphone"
-                    >iPhone</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/samsung"
-                    >Samsung</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/google"
-                    >Google</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/motorola"
-                    >Motorola</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/xiaomi"
-                    >Xiaomi</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/honor"
-                    >Honor</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/oneplus"
-                    >OnePlus</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/iqoo"
-                    >iqoo</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/realme"
-                    >realme</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/nothing"
-                    >Nothing</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/huawei"
-                    >Huawei</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/oppo"
-                    >Oppo</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/vivo"
-                    >vivo</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mobile-phone/nokia"
-                    >Nokia</a
-                  ></span
-                >
-              </div></span
-            ><span class="relative flex gap-2 items-center group"
+            </span>
+            <!-- 2nd nav section end       -->
+
+            <!-- 3rd nav section start      -->
+            <span class="relative flex gap-2 items-center group"
               ><a
                 class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
                 href="/category/tablet"
                 >Tablets &amp; Accessories</a
-              ><svg
-                stroke-width="1.5"
-                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
-                width="20"
-                height="20"
-                stroke="currentColor"
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <polyline points="6 9 12 15 18 9"></polyline>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
               </svg>
-              <div
-                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
-              >
-                <span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/ipad"
-                    >iPad</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/tablet/samsung"
-                    >Samsung Tab</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/tablet/honor"
-                    >HONOR Tab</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/tablet/xiaomi"
-                    >Xiaomi Pad</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/tablet/amazon"
-                    >Amazon Tab</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/smart-pen"
-                    >Smart Pen</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/hubs-and-docs"
-                    >Hubs &amp; Docks</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/cover-and-glass/ipad-and-tab-cover"
-                    >Cover &amp; Cases</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/cover-and-glass/ipad-and-tab-screen-protector"
-                    >Screen Protectors</a
-                  ></span
-                >
-              </div></span
-            ><span class="relative flex gap-2 items-center group"
+            </span>
+            <!-- 4th nav section start  -->
+            <span class="relative flex gap-2 items-center group"
               ><a
                 class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
                 href="/category/computer-and-laptops"
                 >Computer &amp; Laptops</a
-              ><svg
-                stroke-width="1.5"
-                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
-                width="20"
-                height="20"
-                stroke="currentColor"
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <polyline points="6 9 12 15 18 9"></polyline>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
               </svg>
-              <div
-                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
-              >
-                <span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/laptop-and-desktop"
-                    >Laptops</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/hubs-and-docs"
-                    >Hubs &amp; Docks</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/monitor"
-                    >Monitor</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/keyboards"
-                    >Keyboard</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mouse"
-                    >Mouse</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/mouse-pad"
-                    >Mouse Pad</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/printer"
-                    >Printer &amp; Scanner</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/storage"
-                    >Storage</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/microphone"
-                    >Microphone</a
-                  ></span
-                >
-              </div></span
-            ><span class="relative flex gap-2 items-center group"
+            </span>
+            <!-- 5th nav section start       -->
+            <span class="relative flex gap-2 items-center group"
               ><a
                 class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
                 href="/category/gadgets-and-accessories"
                 >Gadgets &amp; Accessories</a
-              ><svg
-                stroke-width="1.5"
-                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
-                width="20"
-                height="20"
-                stroke="currentColor"
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <polyline points="6 9 12 15 18 9"></polyline>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
               </svg>
-              <div
-                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
-              >
-                <span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/sound-equipment"
-                    >Audio<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/cover-and-glass"
-                    >Cover &amp; Protectors<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/cable"
-                    >Cables<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/adapter"
-                    >Chargers</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/power-bank"
-                    >Power Bank</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/smart-tag"
-                    >Smart Tag</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/wireless-charger"
-                    >Wireless Charger</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/multiplug"
-                    >Multiplugs</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/car-accessories"
-                    >Car Accessories</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/gaming-accessories"
-                    >Gaming Accessories</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/smart-gadgets"
-                    >Smart Gadgets</a
-                  ></span
-                >
-              </div></span
-            ><span class="relative flex gap-2 items-center group"
+            </span>
+            <!-- 6 nav section start  -->
+            <span class="relative flex gap-2 items-center group"
               ><a
                 class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
                 href="/category/home-appliances"
                 >Home Appliances</a
               ><svg
-                stroke-width="1.5"
-                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
-                width="20"
-                height="20"
-                stroke="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <polyline points="6 9 12 15 18 9"></polyline>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
               </svg>
-              <div
-                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp right-0"
-              >
-                <span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/kitchen-appliances"
-                    >Kitchen Appliances<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/air-conditioner"
-                    >Air Conditioner<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/tv"
-                    >TV<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/charger-fan"
-                    >Charger Fan</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/geyser"
-                    >Geyser</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/room-heater"
-                    >Room Heater</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/iron"
-                    >Iron</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/vacuum-cleaner"
-                    >Vacuum Cleaner</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/lighting"
-                    >Lighting</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/weight-machine"
-                    >Smart Scale</a
-                  ></span
-                >
-              </div></span
-            ><span class="relative flex gap-2 items-center group"
+            </span>
+            <!-- 7 nav section start  -->
+            <span class="relative flex gap-2 items-center group"
               ><a
                 class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
                 href="/category/lifestyle-and-travel"
                 >Lifestyle &amp; Travel</a
               ><svg
-                stroke-width="1.5"
-                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
-                width="20"
-                height="20"
-                stroke="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <polyline points="6 9 12 15 18 9"></polyline>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
               </svg>
-              <div
-                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp right-0"
-              >
-                <span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/smart-watch"
-                    >Smart Watch<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/wrist-watch"
-                    >Watch<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/smart-band"
-                    >Smart Band</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/fitness-and-wearable/watch-accessories"
-                    >Watch Accessories<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/trimmer"
-                    >Trimmer</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/hair-dryer"
-                    >Hair Dryer</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/straightener"
-                    >Straightener</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/fitness-and-wearable/health-and-lifestyle"
-                    >Health &amp; Lifestyle</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/bag"
-                    >Bag<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a
-                ></span></div></span
-            ><span class="relative flex gap-2 items-center group"
+            </span>
+            <!-- 8 nav section start  -->
+            <span class="relative flex gap-2 items-center group"
               ><a
                 class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
                 href="/category/camera-and-networking"
                 >Camera &amp; Networking</a
               ><svg
-                stroke-width="1.5"
-                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
-                width="20"
-                height="20"
-                stroke="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
               >
-                <polyline points="6 9 12 15 18 9"></polyline>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
               </svg>
-              <div
-                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp right-0"
-              >
-                <span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/media-streamers"
-                    >Smart TV Box</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/router"
-                    >Wi-Fi Router</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/camera"
-                    >Camera<svg
-                      class="text-gray-900"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6.75 13.5L11.25 9L6.75 4.5"
-                        stroke-width="1.33333"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path></svg></a></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/starlink"
-                    >Starlink</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/projector"
-                    >Projector</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/virtual-reality"
-                    >Virtual Reality</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/drone"
-                    >Drone</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/tripod-and-monopod"
-                    >Tripods &amp; Monopods</a
-                  ></span
-                ><span class="relative"
-                  ><a
-                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
-                    href="/category/gimbal"
-                    >Gimbal</a
-                  ></span
-                >
-              </div></span
-            >
+            </span>
           </div>
         </div>
-        <svg
-          width="605"
-          height="51"
-          style="filter: blur(10px)"
-          class="absolute top-2/4 left-2/4 -translate-x-2/4 -bottom-10 z-[5]"
-          viewBox="0 0 645 92"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g opacity="0.1" filter="url(#filter0_f_8075_73395)">
-            <path
-              d="M625 46.3027C625 60.386 489.566 71.8027 322.5 71.8027C155.434 71.8027 20 60.386 20 46.3027C20 32.2195 155.434 20.8027 322.5 20.8027C489.566 20.8027 625 32.2195 625 46.3027Z"
-              fill="url(#paint0_linear_8075_73395)"
-            ></path>
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_8075_73395"
-              x="0"
-              y="0.802734"
-              width="645"
-              height="91"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              ></feBlend>
-              <feGaussianBlur
-                stdDeviation="10"
-                result="effect1_foregroundBlur_8075_73395"
-              ></feGaussianBlur>
-            </filter>
-            <linearGradient
-              id="paint0_linear_8075_73395"
-              x1="20"
-              y1="46.3027"
-              x2="625"
-              y2="46.3027"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#6B7FFF"></stop>
-              <stop offset="0.5" stop-color="#F27F20"></stop>
-              <stop offset="1" stop-color="#BE27FF"></stop>
-            </linearGradient>
-          </defs>
-        </svg>
       </nav>
+      <!-- nav section end  -->
     </header>
   </body>
 </html>
