@@ -1,18 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode:'media',
-  content: ["./*.index.html"],
   theme: {
-    screens:{
-      sm:'480px'
-    }.
-    colors:{
-      'green':'#6ab04c'
+    extend: {
+      screens: {
+        "show-menu": "1022px",
+      },
     },
-    Fontfamily:{
-      serif:['playfair Display','serif'],
-    },
-    extend: {},
   },
-  plugins: [],
 };

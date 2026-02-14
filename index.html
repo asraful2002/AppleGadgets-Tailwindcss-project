@@ -5,174 +5,1413 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>PWSkills - a web page development class</title>
+    <title>AppleGadgets</title>
   </head>
-  <body class="bg-slate-950">
-    <!-- navebar goes here -->
-    <nav
-      class="w-full h-14 bg-indigo-200 flex justify-between px-4 md:px-4 items-center"
-    >
-      <div class="text-2xl text-indigo-700 font-bold">PW Skills</div>
-      <ul class="md:flex hidden font-semibold">
-        <li class="mx-[10px] cursor-pointer">Home</li>
-        <li class="mx-[10px] cursor-pointer">About Us</li>
-        <li class="mx-[10px] cursor-pointer">Contract Us</li>
-      </ul>
+  <body>
+    <header class="print:hidden sticky top-0 w-full z-20">
+      <div class="bg-black text-white">
+        <div class="container flex justify-between items-center py-4">
+          <div class="flex items-center gap-3">
+            <!-- menu button  -->
+            <button type="button" aria-label="Open" class="xl:hidden w-6 h-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+            <!-- menu button  end-->
+
+            <!-- banner logo start  -->
+            <a class="h-auto w-24 xl:w-full" href="/">
+              <img
+                src="img/logo-3717.webp"
+                alt=""
+                class="w-[142px] h-[44px] text-transparent"
+              />
+            </a>
+            <!-- banner logo end  -->
+          </div>
+
+          <button
+            type="button"
+            class="hidden xl:flex items-center justify-center h-12 py-3 px-4 overflow-hidden relative flex-1 lg:max-w-[400px] 2xl:max-w-[584px] rounded-full bg-gray-800 border border-gray-700"
+          >
+            <!-- <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search h-4 w-4 text-gray-400"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+
+            <span class="w-full text-start pl-1 text-sm">Search...</span>
+          </button>
+
+          <div class="flex items-center gap-5">
+            <div class="hidden xl:flex items-center xl:gap-3 3xl:gap-6">
+              <a
+                class="text-sm 3xl:text-base font-semibold hover:text-orange-500"
+                href="/blog"
+                >Blog</a
+              ><a
+                class="text-sm 3xl:text-base font-semibold hover:text-orange-500"
+                href="/pre-order"
+                >Pre-order</a
+              ><a
+                class="flex items-center text-sm 3xl:text-base font-semibold text-orange-500"
+                href="/offer"
+                ><svg
+                  class="h-4 w-4 mr-1"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_5578_40334)">
+                    <path
+                      d="M10 6H14.5V14.5C14.5 14.7652 14.3946 15.0196 14.2071 15.2071C14.0196 15.3946 13.7652 15.5 13.5 15.5H9.75V6H10ZM6.25 6V15.5H2.5C2.23478 15.5 1.98043 15.3946 1.79289 15.2071C1.60536 15.0196 1.5 14.7652 1.5 14.5V6H6.25Z"
+                      fill="#FFAD39"
+                    ></path>
+                    <path
+                      d="M6 3V6H0.75C0.617513 5.9996 0.490566 5.9468 0.396884 5.85312C0.303201 5.75943 0.250396 5.63249 0.25 5.5V3.5C0.250396 3.36751 0.303201 3.24057 0.396884 3.14688C0.490566 3.0532 0.617513 3.0004 0.75 3H6ZM15.75 3.5V5.5C15.7496 5.63249 15.6968 5.75943 15.6031 5.85312C15.5094 5.9468 15.3825 5.9996 15.25 6H10V3H15.25C15.3825 3.0004 15.5094 3.0532 15.6031 3.14688C15.6968 3.24057 15.7496 3.36751 15.75 3.5Z"
+                      fill="#FEBD55"
+                    ></path>
+                    <path
+                      d="M9.25 2.5V3H6.75V2.5C6.7504 2.36751 6.8032 2.24057 6.89688 2.14688C6.99057 2.0532 7.11751 2.0004 7.25 2H8.75C8.88249 2.0004 9.00943 2.0532 9.10312 2.14688C9.1968 2.24057 9.2496 2.36751 9.25 2.5Z"
+                      fill="#CB3541"
+                    ></path>
+                    <path
+                      d="M8.75 2.5H7.25C7.1627 2.49952 7.07705 2.47618 7.00157 2.43232C6.92608 2.38846 6.8634 2.32561 6.81975 2.25C6.77462 2.32562 6.75054 2.41194 6.75 2.5V3H9.25V2.5C9.24946 2.41194 9.22538 2.32562 9.18025 2.25C9.1366 2.32561 9.07392 2.38846 8.99843 2.43232C8.92295 2.47618 8.8373 2.49952 8.75 2.5Z"
+                      fill="#A81E29"
+                    ></path>
+                    <path
+                      d="M6.75017 2.5V3H3.00017C2.9011 3.00211 2.80262 2.98416 2.71067 2.94722C2.61872 2.91027 2.5352 2.85511 2.46513 2.78504C2.39506 2.71497 2.33989 2.63144 2.30295 2.53949C2.26601 2.44754 2.24805 2.34907 2.25017 2.25C2.25017 1.25 3.50017 1.25 3.50017 1.25C4.69993 1.2551 5.8562 1.69982 6.75017 2.5Z"
+                      fill="#E03E3E"
+                    ></path>
+                    <path
+                      d="M4.75 0C6.75 0 6.75 2.5 6.75 2.5C5.85604 1.69982 4.69976 1.2551 3.5 1.25C3.5 1.25 3.5 0 4.75 0ZM9.25 2.5C9.25 2.5 9.25 0 11.25 0C12.5 0 12.5 1.25 12.5 1.25C11.3002 1.2551 10.144 1.69982 9.25 2.5Z"
+                      fill="#CB3541"
+                    ></path>
+                    <path
+                      d="M9.25 2.5C10.144 1.69982 11.3002 1.2551 12.5 1.25C12.5 1.25 13.75 1.25 13.75 2.25C13.7521 2.34907 13.7342 2.44754 13.6972 2.53949C13.6603 2.63144 13.6051 2.71497 13.535 2.78504C13.465 2.85511 13.3814 2.91027 13.2895 2.94722C13.1975 2.98416 13.0991 3.00211 13 3H9.25V2.5Z"
+                      fill="#E03E3E"
+                    ></path>
+                    <path d="M6.25 6H9.75V15.5H6.25V6Z" fill="#CB3541"></path>
+                    <path d="M10 3V6H6V3H9.25H10Z" fill="#FF6161"></path>
+                    <path
+                      d="M15.1575 10.3202C15.21 10.5577 15.75 10.7452 15.75 11.0002C15.75 11.2552 15.21 11.4427 15.1575 11.6802C15.1025 11.9252 15.5075 12.3352 15.405 12.5552C15.2975 12.7802 14.7325 12.7102 14.58 12.9052C14.4275 13.1002 14.6225 13.6477 14.4325 13.8027C14.2425 13.9577 13.7625 13.6427 13.5425 13.7527C13.3275 13.8602 13.2675 14.4402 13.03 14.4952C12.7975 14.5502 12.4975 14.0552 12.25 14.0552C12.0025 14.0552 11.7025 14.5502 11.47 14.4952C11.2325 14.4402 11.1725 13.8602 10.955 13.7527C10.7375 13.6452 10.255 13.9577 10.0675 13.8027C9.88 13.6477 10.07 13.0977 9.9175 12.9052C9.765 12.7127 9.2025 12.7802 9.095 12.5552C8.9925 12.3352 9.3975 11.9252 9.3425 11.6802C9.29 11.4427 8.75 11.2552 8.75 11.0002C8.75 10.7452 9.29 10.5577 9.3425 10.3202C9.3975 10.0752 8.9925 9.66524 9.095 9.44524C9.2025 9.22024 9.7675 9.29024 9.92 9.09524C10.0725 8.90024 9.8775 8.35274 10.0675 8.19774C10.2575 8.04274 10.7375 8.35774 10.9575 8.24774C11.1725 8.14024 11.2325 7.56024 11.47 7.50524C11.7025 7.45024 12.0025 7.94524 12.25 7.94524C12.4975 7.94524 12.7975 7.45024 13.03 7.50524C13.2675 7.56024 13.3275 8.14024 13.545 8.24774C13.7625 8.35524 14.245 8.04274 14.4325 8.19774C14.62 8.35274 14.43 8.90274 14.5825 9.09524C14.735 9.28774 15.2975 9.22024 15.405 9.44524C15.5075 9.66524 15.1025 10.0752 15.1575 10.3202Z"
+                      fill="#CB3541"
+                    ></path>
+                    <path
+                      d="M15 11C15 11.2 14.575 11.3477 14.5343 11.5342C14.4915 11.7272 14.8092 12.0487 14.728 12.2227C14.6467 12.3967 14.2 12.3442 14.0815 12.496C13.963 12.6477 14.1135 13.0805 13.9648 13.2022C13.816 13.324 13.4398 13.0772 13.2665 13.1625C13.0933 13.2477 13.05 13.703 12.862 13.7467C12.6798 13.7892 12.4448 13.3995 12.25 13.3995C12.0552 13.3995 11.8202 13.7892 11.638 13.7467C11.4497 13.703 11.4032 13.2467 11.2335 13.1625C11.0637 13.0782 10.6835 13.3235 10.5352 13.2022C10.387 13.081 10.5373 12.6485 10.4183 12.496C10.2993 12.3435 9.855 12.4 9.77175 12.2225C9.6885 12.045 10.0085 11.727 9.96575 11.5342C9.925 11.3475 9.5 11.2 9.5 11C9.5 10.8 9.925 10.6522 9.96575 10.4657C10.0085 10.2727 9.69075 9.95124 9.772 9.77724C9.85325 9.60324 10.3 9.65574 10.4185 9.50399C10.537 9.35224 10.3865 8.91949 10.5352 8.79774C10.684 8.67599 11.0602 8.92274 11.2335 8.83749C11.4067 8.75224 11.45 8.29699 11.638 8.25324C11.8202 8.21074 12.0552 8.60049 12.25 8.60049C12.4448 8.60049 12.6798 8.21074 12.862 8.25324C13.0503 8.29699 13.0968 8.75324 13.2665 8.83749C13.4363 8.92174 13.8165 8.67649 13.9648 8.79774C14.113 8.91899 13.9627 9.35149 14.0817 9.50399C14.2007 9.65649 14.645 9.60074 14.7282 9.77749C14.8115 9.95424 14.4915 10.273 14.5343 10.4657C14.575 10.6525 15 10.8 15 11Z"
+                      fill="#FF6161"
+                    ></path>
+                    <path
+                      d="M13 13C12.8517 13 12.7067 12.956 12.5833 12.8736C12.46 12.7912 12.3639 12.6741 12.3071 12.537C12.2503 12.4 12.2355 12.2492 12.2644 12.1037C12.2934 11.9582 12.3648 11.8246 12.4697 11.7197C12.5746 11.6148 12.7082 11.5434 12.8537 11.5144C12.9992 11.4855 13.15 11.5003 13.287 11.5571C13.4241 11.6139 13.5412 11.71 13.6236 11.8333C13.706 11.9567 13.75 12.1017 13.75 12.25C13.75 12.4489 13.671 12.6397 13.5303 12.7803C13.3897 12.921 13.1989 13 13 13ZM13 12C12.9506 12 12.9022 12.0147 12.8611 12.0421C12.82 12.0696 12.788 12.1086 12.769 12.1543C12.7501 12.2 12.7452 12.2503 12.7548 12.2988C12.7645 12.3473 12.7883 12.3918 12.8232 12.4268C12.8582 12.4617 12.9027 12.4856 12.9512 12.4952C12.9997 12.5048 13.05 12.4999 13.0957 12.481C13.1414 12.462 13.1804 12.43 13.2079 12.3889C13.2353 12.3478 13.25 12.2994 13.25 12.25C13.25 12.1837 13.2237 12.1201 13.1768 12.0732C13.1299 12.0263 13.0663 12 13 12ZM11.5 10.5C11.3517 10.5 11.2067 10.456 11.0833 10.3736C10.96 10.2912 10.8639 10.1741 10.8071 10.037C10.7503 9.89997 10.7355 9.74917 10.7644 9.60368C10.7934 9.4582 10.8648 9.32456 10.9697 9.21967C11.0746 9.11478 11.2082 9.04335 11.3537 9.01441C11.4992 8.98547 11.65 9.00033 11.787 9.05709C11.9241 9.11386 12.0412 9.20999 12.1236 9.33332C12.206 9.45666 12.25 9.60166 12.25 9.75C12.25 9.94891 12.171 10.1397 12.0303 10.2803C11.8897 10.421 11.6989 10.5 11.5 10.5ZM11.5 9.5C11.4506 9.5 11.4022 9.51466 11.3611 9.54213C11.32 9.5696 11.288 9.60865 11.269 9.65433C11.2501 9.70001 11.2452 9.75028 11.2548 9.79877C11.2645 9.84727 11.2883 9.89181 11.3232 9.92678C11.3582 9.96174 11.4027 9.98555 11.4512 9.9952C11.4997 10.0048 11.55 9.99989 11.5957 9.98097C11.6414 9.96205 11.6804 9.93 11.7079 9.88889C11.7353 9.84778 11.75 9.79945 11.75 9.75C11.75 9.6837 11.7237 9.62011 11.6768 9.57322C11.6299 9.52634 11.5663 9.5 11.5 9.5ZM11 12.5C10.9506 12.5 10.9022 12.4853 10.8611 12.4579C10.82 12.4304 10.788 12.3913 10.7691 12.3457C10.7502 12.3 10.7452 12.2497 10.7549 12.2012C10.7645 12.1528 10.7883 12.1082 10.8233 12.0733L13.3233 9.57325C13.3704 9.52771 13.4336 9.50251 13.4991 9.50308C13.5647 9.50365 13.6274 9.52994 13.6737 9.5763C13.7201 9.62265 13.7463 9.68535 13.7469 9.7509C13.7475 9.81645 13.7223 9.8796 13.6768 9.92675L11.1768 12.4268C11.1299 12.4736 11.0663 12.5 11 12.5Z"
+                      fill="#FBFBFB"
+                    ></path>
+                    <path
+                      d="M14.5 7V6H9.75V7H14.5ZM13.5 14.5H9.75V15.5H13.5C13.7652 15.5 14.0196 15.3946 14.2071 15.2071C14.3946 15.0196 14.5 14.7652 14.5 14.5V13.5C14.5 13.7652 14.3946 14.0196 14.2071 14.2071C14.0196 14.3946 13.7652 14.5 13.5 14.5ZM2.75 10V8C2.75 7.73478 2.85536 7.48043 3.04289 7.29289C3.23043 7.10536 3.48478 7 3.75 7H6.25V6H1.5V14.5C1.5 14.7652 1.60536 15.0196 1.79289 15.2071C1.98043 15.3946 2.23478 15.5 2.5 15.5H6.25V14.3848C5.25628 14.1583 4.36887 13.6011 3.73304 12.8046C3.09721 12.008 2.75062 11.0192 2.75 10Z"
+                      fill="#E68C15"
+                    ></path>
+                    <path
+                      d="M7.25 14.5C6.91341 14.499 6.57799 14.4603 6.25 14.3848V15.5H9.75V14.5H7.25ZM6.25 6H9.75V7H6.25V6Z"
+                      fill="#A81E29"
+                    ></path>
+                    <path
+                      d="M2.875 4.75C2.64294 4.75 2.42038 4.65781 2.25628 4.49372C2.09219 4.32962 2 4.10706 2 3.875C2 3.64294 2.09219 3.42038 2.25628 3.25628C2.42038 3.09219 2.64294 3 2.875 3H0.75C0.617513 3.0004 0.490566 3.0532 0.396884 3.14688C0.303201 3.24057 0.250396 3.36751 0.25 3.5V5.5C0.250396 5.63249 0.303201 5.75943 0.396884 5.85312C0.490566 5.9468 0.617513 5.9996 0.75 6H6V4.75H2.875ZM15.25 4.75H10V6H15.25C15.3825 5.9996 15.5094 5.9468 15.6031 5.85312C15.6968 5.75943 15.7496 5.63249 15.75 5.5V4.25C15.75 4.38261 15.6973 4.50979 15.6036 4.60355C15.5098 4.69732 15.3826 4.75 15.25 4.75Z"
+                      fill="#FFA930"
+                    ></path>
+                    <path d="M6 4.75V6H10V4.75H6Z" fill="#CB3541"></path>
+                    <path
+                      d="M5.75 1.24963C5.75 1.24963 4.29125 0.764383 3.532 0.991383C3.5138 1.07636 3.50309 1.16278 3.5 1.24963C4.69976 1.25473 5.85604 1.69945 6.75 2.49963C6.75 2.49963 6.75 1.39638 6.1625 0.655633C6.16325 0.971883 6.0725 1.24963 5.75 1.24963ZM10.5 1.24963C10.085 1.24963 10.0533 0.790383 10.1073 0.379883C9.25 1.07938 9.25 2.49963 9.25 2.49963C10.144 1.69945 11.3002 1.25473 12.5 1.24963C12.4963 1.14559 12.4819 1.04221 12.457 0.941133C11.667 0.861133 10.5 1.24963 10.5 1.24963Z"
+                      fill="#A81E29"
+                    ></path>
+                    <path
+                      d="M5.71998 1.94571C5.72782 1.98229 5.7274 2.02016 5.71878 2.05656C5.71016 2.09296 5.69354 2.12699 5.67013 2.15617C5.64672 2.18535 5.6171 2.20895 5.58344 2.22526C5.54977 2.24157 5.51289 2.25018 5.47548 2.25046H3.00048C2.86788 2.25046 2.7407 2.19778 2.64693 2.10401C2.55316 2.01025 2.50048 1.88307 2.50048 1.75046V1.61621C2.41764 1.6992 2.3527 1.79831 2.3097 1.90741C2.2667 2.0165 2.24654 2.13326 2.25048 2.25046C2.24837 2.34953 2.26632 2.44801 2.30327 2.53996C2.34021 2.63191 2.39538 2.71543 2.46545 2.7855C2.53552 2.85557 2.61904 2.91073 2.71099 2.94768C2.80294 2.98462 2.90141 3.00258 3.00048 3.00046H6.75048V2.50046C6.42761 2.20426 6.06297 1.95712 5.66823 1.76696C5.69009 1.82511 5.7074 1.88488 5.71998 1.94571ZM13.2505 2.25046H10.7755C10.738 2.25025 10.7011 2.2417 10.6674 2.22542C10.6336 2.20914 10.604 2.18555 10.5805 2.15636C10.557 2.12717 10.5404 2.09312 10.5317 2.05668C10.5231 2.02024 10.5226 1.98233 10.5305 1.94571C10.5538 1.8338 10.5934 1.72591 10.648 1.62546C10.1341 1.83216 9.66088 2.12842 9.25048 2.50046V3.00046H13.0005C13.0996 3.00258 13.198 2.98462 13.29 2.94768C13.3819 2.91073 13.4655 2.85557 13.5355 2.7855C13.6056 2.71543 13.6608 2.63191 13.6977 2.53996C13.7346 2.44801 13.7526 2.34953 13.7505 2.25046C13.7507 2.15034 13.7357 2.05076 13.7057 1.95521C13.6663 2.04302 13.6024 2.11759 13.5216 2.16996C13.4409 2.22234 13.3467 2.25029 13.2505 2.25046Z"
+                      fill="#CB3541"
+                    ></path>
+                    <path
+                      d="M12.5 7.825V3H12V7.825C12.0301 7.86239 12.0681 7.89257 12.1114 7.9133C12.1547 7.93404 12.202 7.9448 12.25 7.9448C12.298 7.9448 12.3453 7.93404 12.3886 7.9133C12.4319 7.89257 12.4699 7.86239 12.5 7.825Z"
+                      fill="#A81E29"
+                    ></path>
+                    <path
+                      d="M9.095 12.5546C8.9925 12.3346 9.3975 11.9246 9.3425 11.6796C9.29 11.4421 8.75 11.2546 8.75 10.9996C8.75 10.7446 9.29 10.5571 9.3425 10.3196C9.383 10.1389 9.174 9.86964 9.10225 9.65039C8.89425 9.77539 8.44025 9.74514 8.345 9.94464C8.2425 10.1646 8.6475 10.5746 8.5925 10.8196C8.54 11.0571 8 11.2446 8 11.4996C8 11.7546 8.54 11.9421 8.5925 12.1796C8.6475 12.4246 8.2425 12.8346 8.345 13.0546C8.4525 13.2796 9.0175 13.2096 9.1675 13.4046C9.3175 13.5996 9.1275 14.1471 9.3175 14.3021C9.41125 14.3796 9.57875 14.3396 9.75 14.2939V12.8031C9.52275 12.7269 9.17675 12.7259 9.095 12.5546Z"
+                      fill="#961B25"
+                    ></path>
+                    <path
+                      d="M11.47 14.495C11.2325 14.44 11.1725 13.86 10.955 13.7525C10.7375 13.645 10.255 13.9575 10.0675 13.8025C9.88 13.6475 10.07 13.0975 9.9175 12.905C9.87264 12.8557 9.81447 12.8204 9.75 12.8035V14.2942C9.89356 14.2331 10.0527 14.2184 10.205 14.2525C10.2912 14.3136 10.3562 14.4001 10.3907 14.5C10.4865 14.705 10.5658 14.9595 10.72 14.995C10.9525 15.05 11.2525 14.555 11.5 14.555C11.7475 14.555 12.0475 15.05 12.28 14.995C12.4338 14.9595 12.5132 14.705 12.6085 14.5C12.6335 14.4441 12.664 14.3907 12.6995 14.3407C12.5473 14.213 12.3903 14.055 12.2495 14.055C12.0025 14.055 11.7025 14.55 11.47 14.495ZM13.7678 13.7397C13.6932 13.7208 13.6147 13.7253 13.5428 13.7525C13.4023 13.8227 13.3275 14.093 13.2265 14.2885C13.4055 14.3365 13.5835 14.3835 13.6828 14.3025C13.8 14.2067 13.7713 13.9597 13.7678 13.7397ZM10.9575 8.2475C10.9953 8.22518 11.0275 8.19447 11.0515 8.15775C10.9348 8.0605 10.821 7.981 10.72 8.005C10.6378 8.024 10.5773 8.10775 10.5238 8.2115C10.6608 8.26929 10.8128 8.2819 10.9575 8.2475ZM11.47 7.505C11.5219 7.50261 11.5738 7.51134 11.6221 7.53062C11.6704 7.54989 11.714 7.57925 11.75 7.61675V6H11.25V7.75825C11.3093 7.63275 11.375 7.527 11.47 7.505Z"
+                      fill="#E68C15"
+                    ></path>
+                    <path
+                      d="M9.74976 8.70484C9.57901 8.65934 9.41201 8.61984 9.31726 8.69709C9.18651 8.80384 9.23551 9.09709 9.23076 9.33159C9.37476 9.26784 9.58976 9.24959 9.74976 9.19659V8.70484Z"
+                      fill="#961B25"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_5578_40334">
+                      <rect
+                        width="16"
+                        height="16"
+                        fill="white"
+                        transform="translate(0 0.401367)"
+                      ></rect>
+                    </clipPath>
+                  </defs></svg
+                >Offers</a
+              ><a
+                class="text-sm 3xl:text-base height-6 font-semibold hover:text-orange-500 xl:flex items-center gap-1.5 hidden"
+                href="/compare"
+                ><div class="relative">
+                  <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 5H2.65856C1.65277 5 1.14987 5 1.02472 4.69134C0.899565 4.38268 1.25517 4.01942 1.96637 3.29289L4.21091 1"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M1 11H13.3414C14.3472 11 14.8501 11 14.9753 11.3087C15.1004 11.6173 14.7448 11.9806 14.0336 12.7071L11.7891 15"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                Compare</a
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <button
+                class="relative text-white hover:text-orange-500 border border-gray-400 size-10 2xl:size-12 rounded-full hidden xl:grid place-items-center"
+              >
+                <svg
+                  class="size-4.5 xl:size-6"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 19C4 19.5304 4.21071 20.0391 4.58579 20.4142C4.96086 20.7893 5.46957 21 6 21C6.53043 21 7.03914 20.7893 7.41421 20.4142C7.78929 20.0391 8 19.5304 8 19C8 18.4696 7.78929 17.9609 7.41421 17.5858C7.03914 17.2107 6.53043 17 6 17C5.46957 17 4.96086 17.2107 4.58579 17.5858C4.21071 17.9609 4 18.4696 4 19Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M15 19C15 19.5304 15.2107 20.0391 15.5858 20.4142C15.9609 20.7893 16.4696 21 17 21C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19C19 18.4696 18.7893 17.9609 18.4142 17.5858C18.0391 17.2107 17.5304 17 17 17C16.4696 17 15.9609 17.2107 15.5858 17.5858C15.2107 17.9609 15 18.4696 15 19Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M17 17H6V3H4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M6 5L20 6L19 13H6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path></svg
+                ><span
+                  class="absolute top-1 right-1 xl:top-1.5 xl:right-1.5 bg-orange-500 text-white text-xs rounded-full size-4 2xl:size-5 flex items-center justify-center"
+                  >0</span
+                ></button
+              ><a
+                class="relative text-white hover:text-orange-500 border border-gray-400 size-10 rounded-full xl:hidden grid place-items-center"
+                href="/cart"
+                ><svg
+                  class="size-6"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 19C4 19.5304 4.21071 20.0391 4.58579 20.4142C4.96086 20.7893 5.46957 21 6 21C6.53043 21 7.03914 20.7893 7.41421 20.4142C7.78929 20.0391 8 19.5304 8 19C8 18.4696 7.78929 17.9609 7.41421 17.5858C7.03914 17.2107 6.53043 17 6 17C5.46957 17 4.96086 17.2107 4.58579 17.5858C4.21071 17.9609 4 18.4696 4 19Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M15 19C15 19.5304 15.2107 20.0391 15.5858 20.4142C15.9609 20.7893 16.4696 21 17 21C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19C19 18.4696 18.7893 17.9609 18.4142 17.5858C18.0391 17.2107 17.5304 17 17 17C16.4696 17 15.9609 17.2107 15.5858 17.5858C15.2107 17.9609 15 18.4696 15 19Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M17 17H6V3H4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M6 5L20 6L19 13H6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path></svg
+                ><span
+                  class="absolute top-1 right-1 xl:top-1.5 xl:right-1.5 bg-orange-500 text-white text-xs rounded-full size-4 xl:size-5 flex items-center justify-center"
+                  >0</span
+                ></a
+              ><button
+                class="relative text-white hover:text-orange-500 border border-gray-400 size-10 2xl:size-12 rounded-full hidden xl:grid place-items-center"
+              >
+                <svg
+                  class="size-4.5 xl:size-6 text-gray-600 lg:text-white"
+                  stroke-width="2"
+                  width="20"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="none"
+                  stroke="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.57757 14.4816C3.1628 15.324 -0.546635 17.0441 1.71266 19.1966C2.81631 20.248 4.04549 21 5.59087 21H14.4091C15.9545 21 17.1837 20.248 18.2873 19.1966C20.5466 17.0441 16.8372 15.324 15.4224 14.4816C12.1048 12.5061 7.89519 12.5061 4.57757 14.4816Z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M14.5 5.5C14.5 7.98528 12.4853 10 10 10C7.51472 10 5.5 7.98528 5.5 5.5C5.5 3.01472 7.51472 1 10 1C12.4853 1 14.5 3.01472 14.5 5.5Z"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="xl:hidden relative pb-2">
+          <form class="container flex gap-3 items-center">
+            <div class="relative flex-1">
+              <label for="query" class="sr-only">Search</label
+              ><input
+                class="w-full border px-3 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-start h-10 text-gray-900 bg-white border-gray-700 rounded-full pr-8 pl-4 py-2 text-sm"
+                id="query"
+                placeholder="Search product, brand, and more..."
+                name="query"
+                value=""
+              /><button
+                type="submit"
+                class="absolute top-1/2 right-2 -translate-y-1/2 w-11 h-8 rounded-quarter bg-orange-500 grid place-items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-search text-white size-4"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
       <div
-        class="hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer"
+        class="fixed xl:hidden bg-white backdrop-blur shadow-[0px_0px_10px_rgb(0_0_0_/_10%)] bottom-0 left-0 right-0"
       >
-        Login/Singup
+        <div class="shadow-md pt-3 pb-1.5 grid grid-cols-4 items-center gap-4">
+          <a
+            class="text-xs font-normal flex flex-col gap-1.5 items-center text-orange-500"
+            href="/"
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.99932 21L7.74868 17.4911C7.61394 15.6046 9.10803 14 10.9993 14C12.8906 14 14.3847 15.6046 14.25 17.4911L13.9993 21"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></path>
+              <path
+                d="M1.35139 12.2135C0.998371 9.91624 0.821861 8.76763 1.25617 7.74938C1.69047 6.73112 2.65403 6.03443 4.58114 4.64106L6.02099 3.6C8.41829 1.86667 9.61694 1 11 1C12.3831 1 13.5817 1.86667 15.979 3.6L17.4189 4.64106C19.346 6.03443 20.3095 6.73112 20.7438 7.74938C21.1781 8.76763 21.0016 9.91624 20.6486 12.2135L20.3476 14.1724C19.8471 17.4289 19.5969 19.0572 18.429 20.0286C17.2611 21 15.5537 21 12.1388 21H9.86119C6.44633 21 4.73891 21 3.571 20.0286C2.40309 19.0572 2.15287 17.4289 1.65243 14.1724L1.35139 12.2135Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linejoin="round"
+              ></path></svg
+            ><span class="">Home</span></a
+          ><button
+            class="text-xs font-normal text-gray-600 flex flex-col gap-1.5 items-center"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 2C11 1.44772 11.4477 1 12 1H16C16.5523 1 17 1.44772 17 2V6C17 6.55228 16.5523 7 16 7H12C11.4477 7 11 6.55228 11 6V2Z"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1 12C1 11.4477 1.44772 11 2 11H6C6.55228 11 7 11.4477 7 12V16C7 16.5523 6.55228 17 6 17H2C1.44772 17 1 16.5523 1 16V12Z"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M11 14C11 14.7956 11.3161 15.5587 11.8787 16.1213C12.4413 16.6839 13.2044 17 14 17C14.7956 17 15.5587 16.6839 16.1213 16.1213C16.6839 15.5587 17 14.7956 17 14C17 13.2044 16.6839 12.4413 16.1213 11.8787C15.5587 11.3161 14.7956 11 14 11C13.2044 11 12.4413 11.3161 11.8787 11.8787C11.3161 12.4413 11 13.2044 11 14Z"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M1 4C1 4.39397 1.0776 4.78407 1.22836 5.14805C1.37913 5.51203 1.6001 5.84274 1.87868 6.12132C2.15726 6.3999 2.48797 6.62087 2.85195 6.77164C3.21593 6.9224 3.60603 7 4 7C4.39397 7 4.78407 6.9224 5.14805 6.77164C5.51203 6.62087 5.84274 6.3999 6.12132 6.12132C6.3999 5.84274 6.62087 5.51203 6.77164 5.14805C6.9224 4.78407 7 4.39397 7 4C7 3.60603 6.9224 3.21593 6.77164 2.85195C6.62087 2.48797 6.3999 2.15726 6.12132 1.87868C5.84274 1.6001 5.51203 1.37913 5.14805 1.22836C4.78407 1.0776 4.39397 1 4 1C3.60603 1 3.21593 1.0776 2.85195 1.22836C2.48797 1.37913 2.15726 1.6001 1.87868 1.87868C1.6001 2.15726 1.37913 2.48797 1.22836 2.85195C1.0776 3.21593 1 3.60603 1 4Z"
+                stroke="#737373"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path></svg
+            ><span class="">Category</span></button
+          ><a
+            class="text-xs font-normal text-gray-600 flex flex-col gap-1.5 items-center"
+            href="/offer"
+            ><svg
+              width="20"
+              height="20"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 15L15 7M9 8C9 8.55228 8.55228 9 8 9C7.44772 9 7 8.55228 7 8C7 7.44772 7.44772 7 8 7C8.55228 7 9 7.44772 9 8ZM15 13.8284C15 14.3807 14.5523 14.8284 14 14.8284C13.4477 14.8284 13 14.3807 13 13.8284C13 13.2761 13.4477 12.8284 14 12.8284C14.5523 12.8284 15 13.2761 15 13.8284Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <circle
+                cx="11"
+                cy="11"
+                r="10"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle></svg
+            ><span class="">Offer</span></a
+          ><button
+            type="button"
+            class="text-xs font-normal text-gray-600 flex flex-col gap-1.5 items-center xl:hidden"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="11"
+                cy="11"
+                r="10"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle>
+              <path
+                d="M6.5 16C8.8317 13.5578 13.1432 13.4428 15.5 16M13.4951 8.5C13.4951 9.88071 12.3742 11 10.9915 11C9.60885 11 8.48797 9.88071 8.48797 8.5C8.48797 7.11929 9.60885 6 10.9915 6C12.3742 6 13.4951 7.11929 13.4951 8.5Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path></svg
+            ><span>Sign In</span>
+          </button>
+        </div>
       </div>
-      <div class="md:hidden">
-        <a href="#" class="text-4xl">&#8801;</a>
-      </div>
-    </nav>
-    <!--naver ends here-->
-    <header class="w-full h-auto">
-      <img src="1 image.png" alt="" />
-      <!-- <img src="image 2.pngv" alt="im" /> -->
+      <nav class="relative shadow-sm hidden xl:block">
+        <div class="relative z-10 bg-white">
+          <div
+            class="container flex items-center justify-center gap-1 3xl:gap-2.5"
+          >
+            <span class="relative flex gap-2 items-center group"
+              ><a
+                class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
+                href="/brands/apple"
+                >Apple Products</a
+              ><svg
+                stroke-width="1.5"
+                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div
+                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
+              >
+                <span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/iphone"
+                    >iPhone</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/macbook"
+                    >MacBook<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mac-mini"
+                    >Mac mini</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/imac"
+                    >iMac<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mac-studio"
+                    >Mac Studio</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/ipad"
+                    >iPad</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/smart-watch/apple"
+                    >Apple Watch</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/sound-equipment/airpods?brands=68&amp;page=1"
+                    >Airpods</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/earpods"
+                    >EarPods</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/airpods-max"
+                    >AirPods Max</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/power-accessories/power-adapter?brands=68&amp;page=1"
+                    >Power Adapter</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/power-accessories/cable-and-interconnects?brands=68&amp;page=1"
+                    >Data Cable</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/air-tag"
+                    >AirTag</a
+                  ></span
+                >
+              </div></span
+            ><span class="relative flex gap-2 items-center group"
+              ><a
+                class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
+                href="/category/mobile-phone"
+                >Phones</a
+              ><svg
+                stroke-width="1.5"
+                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div
+                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
+              >
+                <span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/iphone"
+                    >iPhone</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/samsung"
+                    >Samsung</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/google"
+                    >Google</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/motorola"
+                    >Motorola</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/xiaomi"
+                    >Xiaomi</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/honor"
+                    >Honor</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/oneplus"
+                    >OnePlus</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/iqoo"
+                    >iqoo</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/realme"
+                    >realme</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/nothing"
+                    >Nothing</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/huawei"
+                    >Huawei</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/oppo"
+                    >Oppo</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/vivo"
+                    >vivo</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mobile-phone/nokia"
+                    >Nokia</a
+                  ></span
+                >
+              </div></span
+            ><span class="relative flex gap-2 items-center group"
+              ><a
+                class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
+                href="/category/tablet"
+                >Tablets &amp; Accessories</a
+              ><svg
+                stroke-width="1.5"
+                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div
+                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
+              >
+                <span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/ipad"
+                    >iPad</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/tablet/samsung"
+                    >Samsung Tab</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/tablet/honor"
+                    >HONOR Tab</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/tablet/xiaomi"
+                    >Xiaomi Pad</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/tablet/amazon"
+                    >Amazon Tab</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/smart-pen"
+                    >Smart Pen</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/hubs-and-docs"
+                    >Hubs &amp; Docks</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/cover-and-glass/ipad-and-tab-cover"
+                    >Cover &amp; Cases</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/cover-and-glass/ipad-and-tab-screen-protector"
+                    >Screen Protectors</a
+                  ></span
+                >
+              </div></span
+            ><span class="relative flex gap-2 items-center group"
+              ><a
+                class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
+                href="/category/computer-and-laptops"
+                >Computer &amp; Laptops</a
+              ><svg
+                stroke-width="1.5"
+                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div
+                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
+              >
+                <span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/laptop-and-desktop"
+                    >Laptops</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/hubs-and-docs"
+                    >Hubs &amp; Docks</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/monitor"
+                    >Monitor</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/keyboards"
+                    >Keyboard</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mouse"
+                    >Mouse</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/mouse-pad"
+                    >Mouse Pad</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/printer"
+                    >Printer &amp; Scanner</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/storage"
+                    >Storage</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/microphone"
+                    >Microphone</a
+                  ></span
+                >
+              </div></span
+            ><span class="relative flex gap-2 items-center group"
+              ><a
+                class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
+                href="/category/gadgets-and-accessories"
+                >Gadgets &amp; Accessories</a
+              ><svg
+                stroke-width="1.5"
+                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div
+                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp left-0"
+              >
+                <span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/sound-equipment"
+                    >Audio<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/cover-and-glass"
+                    >Cover &amp; Protectors<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/cable"
+                    >Cables<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/adapter"
+                    >Chargers</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/power-bank"
+                    >Power Bank</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/smart-tag"
+                    >Smart Tag</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/wireless-charger"
+                    >Wireless Charger</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/multiplug"
+                    >Multiplugs</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/car-accessories"
+                    >Car Accessories</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/gaming-accessories"
+                    >Gaming Accessories</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/smart-gadgets"
+                    >Smart Gadgets</a
+                  ></span
+                >
+              </div></span
+            ><span class="relative flex gap-2 items-center group"
+              ><a
+                class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
+                href="/category/home-appliances"
+                >Home Appliances</a
+              ><svg
+                stroke-width="1.5"
+                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div
+                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp right-0"
+              >
+                <span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/kitchen-appliances"
+                    >Kitchen Appliances<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/air-conditioner"
+                    >Air Conditioner<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/tv"
+                    >TV<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/charger-fan"
+                    >Charger Fan</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/geyser"
+                    >Geyser</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/room-heater"
+                    >Room Heater</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/iron"
+                    >Iron</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/vacuum-cleaner"
+                    >Vacuum Cleaner</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/lighting"
+                    >Lighting</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/weight-machine"
+                    >Smart Scale</a
+                  ></span
+                >
+              </div></span
+            ><span class="relative flex gap-2 items-center group"
+              ><a
+                class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
+                href="/category/lifestyle-and-travel"
+                >Lifestyle &amp; Travel</a
+              ><svg
+                stroke-width="1.5"
+                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div
+                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp right-0"
+              >
+                <span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/smart-watch"
+                    >Smart Watch<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/wrist-watch"
+                    >Watch<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/smart-band"
+                    >Smart Band</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/fitness-and-wearable/watch-accessories"
+                    >Watch Accessories<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/trimmer"
+                    >Trimmer</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/hair-dryer"
+                    >Hair Dryer</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/straightener"
+                    >Straightener</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/fitness-and-wearable/health-and-lifestyle"
+                    >Health &amp; Lifestyle</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/bag"
+                    >Bag<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a
+                ></span></div></span
+            ><span class="relative flex gap-2 items-center group"
+              ><a
+                class="text-xs 3xl:text-sm py-2 3xl:py-4 text-gray-900 group-hover:text-orange-500 transition-colors md:font-semibold xl:font-medium block group-hover:text-primary duration-300"
+                href="/category/camera-and-networking"
+                >Camera &amp; Networking</a
+              ><svg
+                stroke-width="1.5"
+                class="stroke-gray-900 group-hover:stroke-orange-500 group-hover:rotate-180 group-hover:ease-in-out group-hover:duration-200"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div
+                class="absolute bg-gray-100 shadow rounded-xl w-[200px] top-[90%] hidden group-hover:flex flex-col animated fadeInUp right-0"
+              >
+                <span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/media-streamers"
+                    >Smart TV Box</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/router"
+                    >Wi-Fi Router</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/camera"
+                    >Camera<svg
+                      class="text-gray-900"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.75 13.5L11.25 9L6.75 4.5"
+                        stroke-width="1.33333"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg></a></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/starlink"
+                    >Starlink</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/projector"
+                    >Projector</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/virtual-reality"
+                    >Virtual Reality</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/drone"
+                    >Drone</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/tripod-and-monopod"
+                    >Tripods &amp; Monopods</a
+                  ></span
+                ><span class="relative"
+                  ><a
+                    class="text-xs 3xl:text-sm font-medium transition-colors p-2 flex items-center justify-between rounded duration-300"
+                    href="/category/gimbal"
+                    >Gimbal</a
+                  ></span
+                >
+              </div></span
+            >
+          </div>
+        </div>
+        <svg
+          width="605"
+          height="51"
+          style="filter: blur(10px)"
+          class="absolute top-2/4 left-2/4 -translate-x-2/4 -bottom-10 z-[5]"
+          viewBox="0 0 645 92"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.1" filter="url(#filter0_f_8075_73395)">
+            <path
+              d="M625 46.3027C625 60.386 489.566 71.8027 322.5 71.8027C155.434 71.8027 20 60.386 20 46.3027C20 32.2195 155.434 20.8027 322.5 20.8027C489.566 20.8027 625 32.2195 625 46.3027Z"
+              fill="url(#paint0_linear_8075_73395)"
+            ></path>
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_8075_73395"
+              x="0"
+              y="0.802734"
+              width="645"
+              height="91"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              ></feBlend>
+              <feGaussianBlur
+                stdDeviation="10"
+                result="effect1_foregroundBlur_8075_73395"
+              ></feGaussianBlur>
+            </filter>
+            <linearGradient
+              id="paint0_linear_8075_73395"
+              x1="20"
+              y1="46.3027"
+              x2="625"
+              y2="46.3027"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#6B7FFF"></stop>
+              <stop offset="0.5" stop-color="#F27F20"></stop>
+              <stop offset="1" stop-color="#BE27FF"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </nav>
     </header>
-    <!-- our student section -->
-    <div
-      class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10"
-    >
-      <div class="w-full h-auto flex flex-wrap flex-col items-center">
-        <p class="text-indigo-800 font-bold text-3xl md:text-4xl text-center">
-          Pure Hardwork, No Shortcut !
-        </p>
-        <div
-          class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"
-        ></div>
-      </div>
-      <div class="w-full flex flex-wrap justify-evenly">
-        <div class="w-46 flex flex-col items-center mb-12">
-          <img class="w-34 h-31" src="img-600.png" alt="" />
-          <p class="text-3xl font-bold text-white">600+</p>
-          <p class="text-3xl font-bold text-gray-500">Different Courses</p>
-        </div>
-
-        <div class="w-46 flex flex-col items-center mb-12">
-          <img class="w-34 h-31" src="img700.png" alt="" />
-          <p class="text-3xl font-bold text-white">70,000+</p>
-          <p class="text-3xl font-bold text-gray-500">Student Enrolled</p>
-        </div>
-
-        <div class="w-46 flex flex-col items-center mb-12">
-          <img class="w-34 h-29" src="img1000.png" alt="" />
-          <p class="text-3xl font-bold text-white">10,000+</p>
-          <p class="text-3xl font-bold text-gray-500">Successful Transition</p>
-        </div>
-      </div>
-    </div>
-    <!-- our students section ends here -->
-    <div
-      class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10"
-    >
-      <div class="w-full h-auto flex flex-wrap flex-col items-center">
-        <p class="text-indigo-800 font-bold text-3xl md:text-4xl text-center">
-          Our Products !
-        </p>
-        <div
-          class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"
-        ></div>
-      </div>
-      <div class="w-[90%] h-auto flex flex-wrap justify-around mb-10">
-        <div
-          class="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-1"
-        >
-          <img src="pro 1.png" alt="" />
-          <p class="text-3xl font-bold text-white">PW Skills Lab</p>
-          <p class="text-xl font-bold text-gray-500">
-            Supercharge Your Project Development With Our robust lab
-          </p>
-        </div>
-
-        <div class="w-64 flex flex-col items-center mb-12">
-          <img src="pro2.png" alt="" />
-          <p class="text-3xl font-bold text-white">Job Portal</p>
-          <p class="text-xl font-bold text-gray-500">
-            use exceprional templates for stand-our resume minus tha sign up
-            process.
-          </p>
-        </div>
-
-        <div class="w-64 flex flex-col items-center mb-12">
-          <img src="pro 3.png" alt="" />
-          <p class="text-3xl font-bold text-white">Experiance Portal</p>
-          <p class="text-xl font-bold text-gray-500">
-            PW Skills self-paced edperiance portal prioritided hand-ok training
-            with 570+ internship project
-          </p>
-        </div>
-
-        <div class="w-64 flex flex-col items-center mb-12">
-          <img src="pro4.png" alt="" />
-          <p class="text-3xl font-bold text-white">Affilate</p>
-          <p class="text-xl font-bold text-gray-500">
-            explore affiliate marketing opportunities with pw skills and attain
-            financial freedom.
-          </p>
-        </div>
-
-        <div
-          class="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-1"
-        >
-          <img src="pro5.png" alt="" />
-          <p class="text-3xl font-bold text-white">PW Skills Lab</p>
-          <p class="text-xl font-bold text-gray-500">
-            our student placement and 100k+ career traqnsitions speak volums
-            about our courses.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- our footer starts here -->
-    <footer
-      class="w-full bg-gray-900 px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap justify-between md:px-12"
-    >
-      <div>
-        <img class="w-40 h-25" src="pw.png" alt="" />
-        <p my-4>Email us: asraful42422@gmail.com</p>
-        <img class="w-25 h-32" src="pwsec.png" alt="" />
-      </div>
-
-      <div class="">
-        <h2 class="font-bold text-xl mt-4">PW Skills</h2>
-        <div
-          class="w-32 h-1 border-b-2 border-yellow-400 rounded--2xl my-2"
-        ></div>
-        <div>
-          <p>About Us</p>
-          <p>FAQS</p>
-          <p>Privacy Policy</p>
-        </div>
-      </div>
-
-      <div class="">
-        <h2 class="font-bold text-xl mt-4">Products</h2>
-        <div
-          class="w-32 h-1 border-b-2 border-yellow-400 rounded--2xl my-2"
-        ></div>
-        <div>
-          <p>PW skills Lav</p>
-          <p>Job Portal</p>
-          <p>Experiance Portal</p>
-          <p>Become an affiliate</p>
-          <p>Hall of fame</p>
-        </div>
-      </div>
-
-      <div class="">
-        <h2 class="font-bold text-xl mt-4">Links</h2>
-        <div
-          class="w-32 h-1 border-b-2 border-yellow-400 rounded--2xl my-2"
-        ></div>
-        <div>
-          <p>discord Channel</p>
-          <p>Pw Youtube</p>
-          <p>Careers</p>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
