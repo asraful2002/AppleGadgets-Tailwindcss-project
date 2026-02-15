@@ -419,178 +419,655 @@
 
       <!-- main section start  -->
       <main
-        class="container mx-auto max-w-[100%] md:max-w-[720px] lg:max-w-[1140px]"
+        class="container mx-auto max-w-[100%] md:max-w-[720px] px-3 lg:max-w-[1140px]"
       >
-        <section
-          class="grid grid-cols-2 lg:grid-cols-10 gap-2 lg:gap-6 mt-4 lg:mt-8"
-        >
+        <section class="grid grid-cols-2 lg:grid-cols-10 gap-3 mt-4 lg:mt-8">
+          <!-- Hero Slider -->
           <div
-            class="relative overflow-hidden rounded-lg lg:row-span-2 col-span-2 lg:col-span-7 pb-[55.25%] lg:pb-0"
-            aria-label="Hero Slider"
+            class="relative overflow-hidden rounded-lg col-span-2 lg:col-span-7 lg:row-span-2"
+          >
+            <img
+              src="img/i pade image.webp"
+              alt=""
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+
+          <!-- Right Top Banner -->
+          <a href="#" class="col-span-1 lg:col-span-3">
+            <img
+              src="img/Care banner image.webp"
+              alt=""
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </a>
+
+          <!-- Right Bottom Banner -->
+          <a href="#" class="col-span-1 lg:col-span-3">
+            <img
+              src="img/watch banner image.webp"
+              alt=""
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </a>
+        </section>
+        <!-- section 2 start  -->
+        <section
+          class="w-full bg-gray-100 shadow-sm rounded-xl py-6 px-8 border border-gray-300 lg:flex justify-between items-center gap-3 mt-6 hidden"
+        >
+          <div class="flex items-center gap-3 flex-1 justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 stroke-violet-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z"
+              />
+            </svg>
+
+            <span class="text-sm font-medium text-gray-800">36 Months EMI</span>
+          </div>
+          <!-- courier item section  -->
+          <div class="flex items-center gap-3 flex-1 justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 stroke-yellow-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+              />
+            </svg>
+
+            <span class="text-sm font-medium text-gray-800"
+              >Fastest Home Delivery</span
+            >
+          </div>
+          <!-- 3rd item section  -->
+          <div class="flex items-center gap-3 flex-1 justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 stroke-green-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"
+              />
+            </svg>
+
+            <span class="text-sm font-medium text-gray-800">
+              Exchange Facility
+            </span>
+          </div>
+          <!-- 4 th item section  -->
+          <div class="flex items-center gap-3 flex-1 justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 stroke-red-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 6h.008v.008H6V6Z"
+              />
+            </svg>
+
+            <span class="text-sm font-medium text-gray-800"
+              >Best Price Deals</span
+            >
+          </div>
+          <!-- 5 item section start  -->
+          <div class="flex items-center gap-3 flex-1 justify-start">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 stroke-orange-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"
+              />
+            </svg>
+
+            <span class="text-sm font-medium text-gray-800">
+              After-Sales Service</span
+            >
+          </div>
+        </section>
+        <!-- text ads section  start -->
+        <section
+          class="mb-10 mt-4 rounded-md drop-shadow bg-white p-2 md:px-6 md:py-2 cursor-pointer space-x-2"
+        >
+          <marquee behavior="scroll" scrollamount="5" direction="left">
+            <span class="pr-3"
+              >🌟 কিরে হালা! 😎 কি দেখছ? আয়নায় তাকা 💸 দেখবি একটা খাস লুইচ্ছা
+              🐒 রে দেখা যায়! 🎨✨</span
+            >
+          </marquee>
+        </section>
+
+        <!-- featured categoris section start  -->
+        <section class="mt-12 mb-5 lg:mt-10 lg:mb-20">
+          <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold">
+            <span class="text-gray-900">Featured </span>
+            <span
+              class="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent"
+            >
+              Categories
+            </span>
+          </h2>
+
+          <div
+            class="md:max-h-full overflow-y-hidden grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2 md:gap-4 mt-10 max-h-[215px]"
+          >
+            <!-- mobile section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/mobile.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Mobile Phone
+              </p>
+            </a>
+
+            <!-- tablet section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/tablet.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Tablet
+              </p>
+            </a>
+
+            <!-- Laptop section   -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/laptop.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Laptop
+              </p>
+            </a>
+
+            <!-- Airpods section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/airpods.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Airpods
+              </p>
+            </a>
+
+            <!-- wireless headphone section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/headphone.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Wireless Headphone
+              </p>
+            </a>
+
+            <!-- headphone section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/headphone 2.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Wired Headphone
+              </p>
+            </a>
+
+            <!-- Headphone section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/headphone 3.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Headphone
+              </p>
+            </a>
+
+            <!-- speaker section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md::flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/speaker.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Speakers
+              </p>
+            </a>
+
+            <!-- Starlink section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointermd:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/starlink.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Starlink
+              </p>
+            </a>
+
+            <!-- smart pen section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/pen.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Smart Pen
+              </p>
+            </a>
+
+            <!-- Powerd Adaper section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/power.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Powerd Adaper
+              </p>
+            </a>
+
+            <!-- cables section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/cables.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Cables
+              </p>
+            </a>
+
+            <!-- Power bank section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/power bank.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Power Bank
+              </p>
+            </a>
+
+            <!-- hubs section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/hubs.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Hubs & Docks
+              </p>
+            </a>
+
+            <!-- Wireless Charger section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/charger.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Wireless Charger
+              </p>
+            </a>
+
+            <!-- home section  -->
+            <a
+              class="flex flex-col items-center justify-center pt-1 md:p-2 group transition-shadow duration-300 rounded-lg cursor-pointer md:flex"
+              href=""
+            >
+              <figure class="w-16 h-16 md:size-14 relative mb-3">
+                <img src="img/home appliances.webp" alt="" />
+              </figure>
+              <p class="text-center text-xs font-medium text-gray-800">
+                Home Appliances
+              </p>
+            </a>
+          </div>
+        </section>
+        <!-- New trand ptoduct section start  -->
+        <section class="mb-10">
+          <div class="flex items-center justify-between">
+            <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold">
+              <span class="text-gray-900">New </span>
+              <span
+                class="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent"
+              >
+                Trends
+              </span>
+            </h2>
+            <!-- end color text  -->
+           
+              <button
+                class="w-8 h-8 rounded-full grid place-items-center text-gray-600 border border-gray-600 cursor-not-allowed"
+                aria-label="Prev Button"
+                type="button"
+                disabled=""
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-left"
+                >
+                  <path d="m15 18-6-6 6-6"></path>
+                </svg></button
+              ><button
+                class="w-8 h-8 rounded-full grid place-items-center bg-black text-white"
+                aria-label="Next Button"
+                type="button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-right"
+                >
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+              </button>
+            </div> 
+          </div>
+          <div
+            class="relative overflow-hidden -mr-3 3xl:-mr-2.5 3.5xl:-mr-12 4xl:mr-0"
+            aria-label="Product Slider"
             aria-roledescription="carousel"
           >
-            <div class="overflow-hidden h-full absolute inset-0 lg:static">
+            <div class="overflow-hidden h-full">
               <div
-                class="flex h-full"
-                style="transform: translate3d(-6535.66px, 0px, 0px)"
+                class="flex items-stretch space-x-3 lg:space-x-4 bg-white py-10"
+                style="transform: translate3d(0px, 0px, 0px)"
               >
-                <!-- left image start  -->
-                <a
-                  class="flex-[0_0_100%]"
-                  href="https://www.applegadgetsbd.com/offer/exclusive-deals-on-iphone-17-series"
-                  style="transform: translate3d(6536px, 0px, 0px)"
-                  ><figure class="relative h-full w-full">
-                    <img src="img/i pade image.webp" alt="" /></figure
-                ></a>
+          <!-- 1st item section  -->
+                <article
+                  class="border rounded-3xl card-shadow overflow-hidden group flex flex-col pb-3 md:pb-4 flex-[0_0_164px] sm:flex-[0_0_30%] lg:flex-[0_0_45%] xl:flex-[0_0_280px] shadow-lg"
+                >
+                  <a class="mb-3 md:mb-2" href=""
+                    ><div class="relative h-0 pb-[76.25%] bg-gray-100">
+                      <img class="object-cover px-2 pt-2 bg-white rounded-t-3xl" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="img/AirPods-Pro-3-7217.webp" alt="" style="position: absolute;height: 100%;width: 100%;inset: 0px;color: transparent;">
+                    </div>
+                    <p
+                      class="px-3 md:px-4 pt-2 text-sm md:text-lg text-gray-900 leading-6 font-semibold line-clamp-2 max-h-14 md:max-h-15"
+                    >
+                      AirPods Pro 3
+                    </p></a
+                  >
+                  <div class="mt-auto px-3 md:px-4">
+                    <span
+                      class="text-base md:text-lg text-gray-900 leading-6 font-semibold"
+                      >৳ 30,000</span
+                    >
+                    <div class="flex items-center gap-2 mt-2 md:mt-1">
+                      <span
+                        class="line-through text-xs md:text-sm leading-6 text-gray-600 font-medium"
+                        >৳34,000</span
+                      >
+                      <p
+                        class="bg-green-100 text-green-600 w-max px-2 md:px-3 py-1 md:py-1.5 rounded-3xl text-xs font-medium"
+                      >
+                        ৳ 4,000 OFF
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                
+          <!-- 2nd item section  -->
+                <article
+                  class="border rounded-3xl card-shadow overflow-hidden group flex flex-col pb-3 md:pb-4 flex-[0_0_164px] sm:flex-[0_0_30%] lg:flex-[0_0_45%] xl:flex-[0_0_280px] shadow-lg"
+                >
+                  <a class="mb-3 md:mb-2" href=""
+                    ><div class="relative h-0 pb-[76.25%] bg-gray-100">
+                      <img class="object-cover px-2 pt-2 bg-white rounded-t-3xl" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="img/iPhone-17-Pro-Max-cosmic-orange-8534.webp" alt="" style="position: absolute;height: 100%;width: 100%;inset: 0px;color: transparent;">
+                    </div>
+                    <p
+                      class="px-3 md:px-4 pt-2 text-sm md:text-lg text-gray-900 leading-6 font-semibold line-clamp-2 max-h-14 md:max-h-15"
+                    >
+                      iPhone 17 Pro Max
+                    </p></a
+                  >
+                  <div class="mt-auto px-3 md:px-4">
+                    <span
+                      class="text-base md:text-lg text-gray-900 leading-6 font-semibold"
+                      >৳ 175,000</span
+                    >
+                    <div class="flex items-center gap-2 mt-2 md:mt-1">
+                      <span
+                        class="line-through text-xs md:text-sm leading-6 text-gray-600 font-medium"
+                        >৳180,000</span
+                      >
+                      <p
+                        class="bg-green-100 text-green-600 w-max px-2 md:px-3 py-1 md:py-1.5 rounded-3xl text-xs font-medium"
+                      >
+                        ৳5,000 OFF
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                
+          <!--3rd item section  -->
+                <article
+                  class="border rounded-3xl card-shadow overflow-hidden group flex flex-col pb-3 md:pb-4 flex-[0_0_164px] sm:flex-[0_0_30%] lg:flex-[0_0_45%] xl:flex-[0_0_280px] shadow-lg"
+                >
+                  <a class="mb-3 md:mb-2" href=""
+                    ><div class="relative h-0 pb-[76.25%] bg-gray-100">
+                      <img class="object-cover px-2 pt-2 bg-white rounded-t-3xl" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="img/Galaxy-S25-Ultra-5G-Titanium-Silverblue-3141.webp" alt="" style="position: absolute;height: 100%;width: 100%;inset: 0px;color: transparent;">
+                    </div>
+                    <p
+                      class="px-3 md:px-4 pt-2 text-sm md:text-lg text-gray-900 leading-6 font-semibold line-clamp-2 max-h-14 md:max-h-15"
+                    >
+                      Galaxy S25 Ultra 5G
+                    </p></a
+                  >
+                  <div class="mt-auto px-3 md:px-4">
+                    <span
+                      class="text-base md:text-lg text-gray-900 leading-6 font-semibold"
+                      >৳ 114,000</span
+                    >
+                    <div class="flex items-center gap-2 mt-2 md:mt-1">
+                      <span
+                        class="line-through text-xs md:text-sm leading-6 text-gray-600 font-medium"
+                        >৳117,000</span
+                      >
+                      <p
+                        class="bg-green-100 text-green-600 w-max px-2 md:px-3 py-1 md:py-1.5 rounded-3xl text-xs font-medium"
+                      >
+                        ৳ 3,000 OFF
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                
+          <!-- 4 item section  -->
+                <article
+                  class="border rounded-3xl card-shadow overflow-hidden group flex flex-col pb-3 md:pb-4 flex-[0_0_164px] sm:flex-[0_0_30%] lg:flex-[0_0_45%] xl:flex-[0_0_280px] shadow-lg"
+                >
+                  <a class="mb-3 md:mb-2" href=""
+                    ><div class="relative h-0 pb-[76.25%] bg-gray-100">
+                      <img class="object-cover px-2 pt-2 bg-white rounded-t-3xl" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="img/Galaxy-Watch8-graphite-8349.webp" alt="" style="position: absolute;height: 100%;width: 100%;inset: 0px;color: transparent;">
+                    </div>
+                    <p
+                      class="px-3 md:px-4 pt-2 text-sm md:text-lg text-gray-900 leading-6 font-semibold line-clamp-2 max-h-14 md:max-h-15"
+                    >
+                      Galaxy Watch8
+                    </p></a
+                  >
+                  <div class="mt-auto px-3 md:px-4">
+                    <span
+                      class="text-base md:text-lg text-gray-900 leading-6 font-semibold"
+                      >৳ 25,000</span
+                    >
+                    <div class="flex items-center gap-2 mt-2 md:mt-1">
+                      <span
+                        class="line-through text-xs md:text-sm leading-6 text-gray-600 font-medium"
+                        ></span
+                      >
+                      <p
+                        class="bg-green-100 text-green-600 w-max px-2 md:px-3 py-1 md:py-1.5 rounded-3xl text-xs font-medium"
+                      >
+                        
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                
+          <!-- 1st item section  -->
+                <article
+                  class="border rounded-3xl card-shadow overflow-hidden group flex flex-col pb-3 md:pb-4 flex-[0_0_164px] sm:flex-[0_0_30%] lg:flex-[0_0_45%] xl:flex-[0_0_280px] shadow-lg"
+                >
+                  <a class="mb-3 md:mb-2" href=""
+                    ><div class="relative h-0 pb-[76.25%] bg-gray-100">
+                      <img class="object-cover px-2 pt-2 bg-white rounded-t-3xl" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="img/AirPods-Pro-3-7217.webp" alt="" style="position: absolute;height: 100%;width: 100%;inset: 0px;color: transparent;">
+                    </div>
+                    <p
+                      class="px-3 md:px-4 pt-2 text-sm md:text-lg text-gray-900 leading-6 font-semibold line-clamp-2 max-h-14 md:max-h-15"
+                    >
+                      AirPods Pro 3
+                    </p></a
+                  >
+                  <div class="mt-auto px-3 md:px-4">
+                    <span
+                      class="text-base md:text-lg text-gray-900 leading-6 font-semibold"
+                      >৳ 30,000</span
+                    >
+                    <div class="flex items-center gap-2 mt-2 md:mt-1">
+                      <span
+                        class="line-through text-xs md:text-sm leading-6 text-gray-600 font-medium"
+                        >৳34,000</span
+                      >
+                      <p
+                        class="bg-green-100 text-green-600 w-max px-2 md:px-3 py-1 md:py-1.5 rounded-3xl text-xs font-medium"
+                      >
+                        ৳ 4,000 OFF
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                
+          <!-- 1st item section  -->
+                <article
+                  class="border rounded-3xl card-shadow overflow-hidden group flex flex-col pb-3 md:pb-4 flex-[0_0_164px] sm:flex-[0_0_30%] lg:flex-[0_0_45%] xl:flex-[0_0_280px] shadow-lg"
+                >
+                  <a class="mb-3 md:mb-2" href=""
+                    ><div class="relative h-0 pb-[76.25%] bg-gray-100">
+                      <img class="object-cover px-2 pt-2 bg-white rounded-t-3xl" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="img/AirPods-Pro-3-7217.webp" alt="" style="position: absolute;height: 100%;width: 100%;inset: 0px;color: transparent;">
+                    </div>
+                    <p
+                      class="px-3 md:px-4 pt-2 text-sm md:text-lg text-gray-900 leading-6 font-semibold line-clamp-2 max-h-14 md:max-h-15"
+                    >
+                      AirPods Pro 3
+                    </p></a
+                  >
+                  <div class="mt-auto px-3 md:px-4">
+                    <span
+                      class="text-base md:text-lg text-gray-900 leading-6 font-semibold"
+                      >৳ 30,000</span
+                    >
+                    <div class="flex items-center gap-2 mt-2 md:mt-1">
+                      <span
+                        class="line-through text-xs md:text-sm leading-6 text-gray-600 font-medium"
+                        >৳34,000</span
+                      >
+                      <p
+                        class="bg-green-100 text-green-600 w-max px-2 md:px-3 py-1 md:py-1.5 rounded-3xl text-xs font-medium"
+                      >
+                        ৳ 4,000 OFF
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                
+                
+                
+               
+                
               </div>
             </div>
-            <!-- right image start  -->
-            <!-- left image button start section  -->
-            <button
-              class="w-8 h-8 rounded-full place-items-center absolute left-2 top-1/2 -translate-y-1/2 hidden sm:flex justify-center bg-white text-gray-900"
-              aria-label="Prev Button"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
-                />
-              </svg></button
-            ><button
-              class="w-8 h-8 rounded-full place-items-center absolute right-2 top-1/2 -translate-y-1/2 hidden sm:flex justify-center bg-white text-gray-900"
-              aria-label="Next Button"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                />
-              </svg>
-            </button>
-            <!-- left image button end section  -->
-            <!-- <div
-              class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10"
-              role="navigation"
-              aria-label="Carousel dots"
-            >
-              <button
-                class="h-1.5 rounded-full transition-all duration-300 w-9 bg-orange-500"
-                type="button"
-                aria-label="Go to slide 1"
-              ></button
-              ><button
-                class="w-2 h-1.5 rounded-full transition-all duration-300 bg-white"
-                type="button"
-                aria-label="Go to slide 2"
-              ></button
-              ><button
-                class="w-2 h-1.5 rounded-full transition-all duration-300 bg-white"
-                type="button"
-                aria-label="Go to slide 3"
-              ></button
-              ><button
-                class="w-2 h-1.5 rounded-full transition-all duration-300 bg-white"
-                type="button"
-                aria-label="Go to slide 4"
-              ></button
-              ><button
-                class="w-2 h-1.5 rounded-full transition-all duration-300 bg-white"
-                type="button"
-                aria-label="Go to slide 5"
-              ></button
-              ><button
-                class="w-2 h-1.5 rounded-full transition-all duration-300 bg-white"
-                type="button"
-                aria-label="Go to slide 6"
-              ></button
-              ><button
-                class="w-2 h-1.5 rounded-full transition-all duration-300 bg-white"
-                type="button"
-                aria-label="Go to slide 7"
-              ></button>
-            </div> -->
           </div>
-          <a
-            class="lg:col-span-3 relative flex pb-[57.25%] 3xl:pb-[58.25%]"
-            href="https://applegadgetscare.com/"
-            ><img
-              alt="Care Banner - AGL Website-3012"
-              loading="lazy"
-              decoding="async"
-              data-nimg="fill"
-              class="rounded-lg"
-              style="
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                color: transparent;
-              "
-              sizes="(min-width: 1200px) 100vw, 50vw"
-              srcset="
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=384&amp;q=75   384w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=640&amp;q=75   640w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=750&amp;q=75   750w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=828&amp;q=75   828w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=1080&amp;q=75 1080w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=1200&amp;q=75 1200w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=1920&amp;q=75 1920w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=2048&amp;q=75 2048w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=3840&amp;q=75 3840w
-              "
-              src="/_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCare-Banner---AGL-Website-3012.png&amp;w=3840&amp;q=75" /></a
-          ><a
-            class="lg:col-span-3 relative flex pb-[57.25%] 3xl:pb-[58.25%]"
-            href="https://www.applegadgetsbd.com/product/cmf-by-nothing-watch-3-pro-bt-calling-smart-watch"
-            ><img
-              alt="CMF by Nothing Watch Pro 3 - Top Right-1896"
-              loading="lazy"
-              decoding="async"
-              data-nimg="fill"
-              class="rounded-lg"
-              style="
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                color: transparent;
-              "
-              sizes="(min-width: 1200px) 100vw, 50vw"
-              srcset="
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=384&amp;q=75   384w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=640&amp;q=75   640w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=750&amp;q=75   750w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=828&amp;q=75   828w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=1080&amp;q=75 1080w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=1200&amp;q=75 1200w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=1920&amp;q=75 1920w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=2048&amp;q=75 2048w,
-                /_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=3840&amp;q=75 3840w
-              "
-              src="/_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FCMF-by-Nothing-Watch-Pro-3---Top-Right-1896.png&amp;w=3840&amp;q=75"
-          /></a>
         </section>
       </main>
     </header>
