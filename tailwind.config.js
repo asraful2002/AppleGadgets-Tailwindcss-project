@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
-    container: {
-      center: true,
-      padding: "1rem",
-      screens: {},
-    },
     extend: {
-      screens: {},
+      colors: {
+        primary: "#16a34a",
+      },
     },
   },
-  plugins: [require("tailwind-scrollbar-hide")],
+  plugins: [],
 };
