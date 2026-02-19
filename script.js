@@ -1,5 +1,3 @@
-const darkMode = document.getElementById("dark");
-let mainElement = document.getElementById("main");
-darkMode.addEventListener("click", () => {
-  mainElement.classList.toggle("dark");
-});
+console.log("hello");
+process.stdout.write("chai");
+console.table({ city: "narayangonj" });
